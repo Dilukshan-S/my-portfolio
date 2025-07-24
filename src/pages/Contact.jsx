@@ -1,13 +1,13 @@
-export default function Languages() {
+function Contact() {
   return (
-    <section className="section">
-      <h2>Languages & Volunteering</h2>
-      <ul>
-        <li>Languages: English (Fluent), Tamil (Native), Sinhala (Conversational)</li>
-        <li>IEEE Member (2024–Present)</li>
-        <li>Rotaract Club of IIT, Member (2021–Present)</li>
-        <li>Cricket Team Coordinator (2019–2020)</li>
-      </ul>
-    </section>
+    <div className="p-8">
+      <h2 className="text-2xl font-bold mb-4">Contact</h2>
+      <p><strong>Phone:</strong> +94 769652623</p>
+      <p><strong>Email:</strong> dilukshan.js@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a className="text-blue-500" href="https://linkedin.com/in/sdilukshan1">linkedin.com/in/sdilukshan1</a></p>
+      <p><strong>GitHub:</strong> <a className="text-blue-500" href="https://github.com/Dilukshan-S">github.com/Dilukshan-S</a></p>
+    </div>
   );
 }
+
+export default Contact;

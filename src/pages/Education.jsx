@@ -1,9 +1,11 @@
-export default function Education() {
+function Education() {
   return (
-    <section className="section">
-      <h2>Education</h2>
-      <p><strong>BEng (Hons) Software Engineering</strong><br/>Informatics Institute of Technology – University of Westminster (09/2021 – 09/2025)</p>
-      <p><strong>Cambridge A-Level:</strong> 3A’s, 1B – Oasis International School (2009 – 2020)</p>
-    </section>
+    <div className="p-8">
+      <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <p><strong>BEng (Hons) Software Engineering</strong>, Informatics Institute of Technology – University of Westminster (2021–2025)</p>
+      <p className="mt-2">Cambridge A-Level: 3A’s, 1B – Oasis International School (2009–2020)</p>
+    </div>
   );
 }
+
+export default Education;

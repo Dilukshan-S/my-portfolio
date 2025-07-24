@@ -624,3 +624,13 @@ a {
 .section ul li {
   margin-bottom: 0.5rem;
 }
+
+html.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+html.light {
+  background-color: #f9f9f9;
+  color: #111;
+}
