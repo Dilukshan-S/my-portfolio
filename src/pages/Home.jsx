@@ -4,14 +4,14 @@ import '../App.css';
 
 export default function Home() {
   return (
-    <div className="hero">
-      <div className="hero-overlay">
-        <h1>Dilukshan Sathiyamoorthy</h1>
+    <div className="hero relative h-screen w-screen flex items-center justify-center">
+      <div className="hero-overlay absolute z-10 text-white text-center space-y-3 p-8 max-w-4xl">
+        <h1 className="text-4xl font-bold">Dilukshan Sathiyamoorthy</h1>
         <p>📍 Colombo - 15, Sri Lanka</p>
         <p>📞 +94 769652623 | 📧 dilukshan.js@gmail.com</p>
         <p>
-          🌐 <a href="https://linkedin.com/in/sdilukshan1" target="_blank" rel="noopener noreferrer">LinkedIn</a> |{' '}
-          <a href="https://github.com/Dilukshan-S" target="_blank" rel="noopener noreferrer">GitHub</a>
+          🌐 <a className="text-blue-400 underline" href="https://linkedin.com/in/sdilukshan1" target="_blank" rel="noopener noreferrer">LinkedIn</a> |{' '}
+          <a className="text-blue-400 underline" href="https://github.com/Dilukshan-S" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
         <p>
           💼 Full Stack Developer with 1+ year of experience building scalable web and mobile applications using React.js, React Native, Node.js, Firebase, MongoDB, and Express.
@@ -26,7 +26,7 @@ export default function Home() {
           🚀 Passionate about creative solutions, modern UIs, performance optimization, and delivering impactful digital products.
         </p>
       </div>
-      <Canvas camera={{ position: [0, 0, 6] }}>
+      <Canvas className="absolute top-0 left-0 z-0" camera={{ position: [0, 0, 6] }}>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Float speed={2} rotationIntensity={1.5} floatIntensity={2}>
