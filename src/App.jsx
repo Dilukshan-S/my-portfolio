@@ -35,7 +35,12 @@ export default function App() {
       <Router>
         <Navbar />
         <div className="pt-20 px-4 pb-10 max-w-5xl mx-auto">
-          <AnimatedRoutes />
+          <div className="flex-grow">
+            <AnimatedRoutes />
+          </div>
+          <footer className="text-center text-gray-500 dark:text-gray-400 mt-10">
+            <p>&copy; {new Date().getFullYear()} Dilukshan Sathiyamoorthy. All rights reserved.</p>
+          </footer>
         </div>
       </Router>
     </ThemeProvider>
