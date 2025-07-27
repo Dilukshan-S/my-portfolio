@@ -1,11 +1,27 @@
-function Education() {
+import React from 'react';
+import { motion } from 'framer-motion';
+
+export default function Education() {
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-bold mb-4">Education</h2>
-      <p><strong>BEng (Hons) Software Engineering</strong>, Informatics Institute of Technology – University of Westminster (2021–2025)</p>
-      <p className="mt-2">Cambridge A-Level: 3A’s, 1B – Oasis International School (2009–2020)</p>
-    </div>
+    <motion.section
+      className="py-16"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-3xl font-bold mb-4">Education</h2>
+      <motion.div
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h3 className="text-xl font-semibold">BEng (Hons) Software Engineering</h3>
+        <p>Informatics Institute of Technology affiliated with University of Westminster (2021–2025)</p>
+        <br></br>
+        <p className="text-xl font-semibold">Cambridge A-Level: passed with 3 A's, 1 B</p>
+        <p>Oasis International School</p>
+      </motion.div>
+    </motion.section>
   );
 }
-
-export default Education;
