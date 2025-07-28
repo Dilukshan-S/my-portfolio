@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const projects = [
   { title: 'Summarizer', desc: 'Video summarization tool using Flask, Whisper, BART, and TTS.' },
-  { title: 'MindMate', desc: 'Mental health app with real-time emotion detection using TensorFlow and OpenCV.' },
-  { title: 'HomeTeq', desc: 'E-commerce system featuring secure login, payment integration, and order tracking.' },
+  { title: 'MindMate', desc: 'Mental health support app with real-time emotion detection using TensorFlow and OpenCV.' },
+  { title: 'HomeTeq', desc: 'E-commerce website featuring secure login, payment integration, and order tracking.' },
 ];
 
 export default function Projects() {

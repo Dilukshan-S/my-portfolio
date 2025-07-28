@@ -11,6 +11,7 @@ import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
+import AnimatedBackground from './contexts/AnimatedBackground';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -33,6 +34,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <Router>
+        <AnimatedBackground />
         <Navbar />
         <div className="pt-20 px-4 pb-10 max-w-5xl mx-auto">
           <div className="flex-grow">

@@ -3,11 +3,15 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./App.jsx"
+    "./src/**/**/*.{js,jsx}",
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+    'spin-slow': 'spin 20s linear infinite',
+  },
+    },
   },
   plugins: [],
 }
