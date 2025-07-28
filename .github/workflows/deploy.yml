@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to 'master' if that's your default branch
+      - main  # or 'master'
 
 jobs:
   deploy:
@@ -19,7 +19,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install  # changed here
 
       - name: Build project
         run: npm run build
