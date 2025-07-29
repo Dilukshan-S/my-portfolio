@@ -9,9 +9,9 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-bold">
           Dilukshan Sathiyamoorthy
         </h1>
-        <p>📍 Colombo - 15, Sri Lanka</p>
+    
         <p>
-          📞 +94 769652623 | 📧{" "}
+        📧{" "}
           <a href="mailto:sathiyamurthi.20210851@iit.ac.lk">
             sathiyamurthi.20210851@iit.ac.lk
           </a>
