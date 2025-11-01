@@ -9,9 +9,9 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-bold">
           Dilukshan Sathiyamoorthy
         </h1>
-    
+
         <p>
-        📧{" "}
+          📧{" "}
           <a href="mailto:sathiyamurthi.20210851@iit.ac.lk">
             sathiyamurthi.20210851@iit.ac.lk
           </a>
@@ -47,8 +47,8 @@ export default function Home() {
         </p>
         <p>
           🎓 BEng (Hons) Software Engineering - Informatics Institute of
-          Technology (IIT) affiliated with University of Westminster (Expected
-          2nd Upper)
+          Technology (IIT) affiliated with University of Westminster (Passed
+          with 2nd class Upper division)
         </p>
         <p>
           🚀 Passionate about creative solutions, modern UIs, performance
