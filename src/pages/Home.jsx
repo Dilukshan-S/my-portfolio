@@ -16,6 +16,7 @@ export default function Home() {
             sathiyamurthi.20210851@iit.ac.lk
           </a>
         </p>
+
         <p>
           🌐{" "}
           <a
@@ -36,25 +37,26 @@ export default function Home() {
             GitHub
           </a>
         </p>
+
         <p>
-          💼 Full Stack Developer with 1+ year of experience building scalable
+          💼 Software Engineering Graduate (BEng Hons, Second Class Upper
+          Division) with hands-on experience building scalable and performant
           web and mobile applications using React.js, React Native, Node.js,
           Firebase, MongoDB, and Express.
         </p>
+
         <p>
-          🔧 Skills: JavaScript, TypeScript, HTML, CSS, Tailwind CSS, REST APIs,
-          JWT Auth, Docker, Git & GitHub, Firebase, MongoDB
+          🔧 Skilled in JavaScript, TypeScript, HTML, CSS, Tailwind CSS, REST
+          APIs, JWT Auth, Docker, Git & GitHub, Firebase, and MongoDB.
         </p>
+
         <p>
-          🎓 BEng (Hons) Software Engineering - Informatics Institute of
-          Technology (IIT) affiliated with University of Westminster (Passed
-          with 2nd class Upper division)
-        </p>
-        <p>
-          🚀 Passionate about creative solutions, modern UIs, performance
-          optimization, and delivering impactful digital products.
+          🚀 Passionate about creating modern user experiences, performance
+          optimization, and delivering impactful digital products through clean
+          and maintainable code.
         </p>
       </div>
+
       <Canvas
         className="absolute top-0 left-0 z-0"
         camera={{ position: [0, 0, 6] }}

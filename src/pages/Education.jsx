@@ -11,24 +11,29 @@ export default function Education() {
       transition={{ duration: 0.6 }}
     >
       <h2 className="text-3xl font-bold mb-4">Education</h2>
+
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
+        className="space-y-2"
       >
         <h3 className="text-xl font-semibold">
           BEng (Hons) Software Engineering with Industrial Placement
         </h3>
-        <p>Completed with Second Class Upper Division</p>
-        <p>
-          Informatics Institute of Technology affiliated with University of
+        <p className="italic text-gray-300">
+          Informatics Institute of Technology, affiliated with the University of
           Westminster (2021–2025)
         </p>
-        <br></br>
-        <p className="text-xl font-semibold">
-          Cambridge A-Level: passed with 3 A's, 1 B
+        <p className="text-green-400 font-medium">
+          Graduated with Second Class Upper Division
         </p>
+
+        <br />
+
+        <h3 className="text-xl font-semibold">Cambridge Advanced Level</h3>
         <p>Oasis International School</p>
+        <p>Achieved 3 A’s and 1 B</p>
       </motion.div>
     </motion.section>
   );

@@ -1,17 +1,22 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import { ThemeProvider } from './contexts/ThemeContext';
+import React from "react";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Experience from './pages/Experience';
-import Projects from './pages/Projects';
-import Education from './pages/Education';
-import Contact from './pages/Contact';
-import AnimatedBackground from './contexts/AnimatedBackground';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Education from "./pages/Education";
+import Contact from "./pages/Contact";
+import AnimatedBackground from "./contexts/AnimatedBackground";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -41,7 +46,10 @@ export default function App() {
             <AnimatedRoutes />
           </div>
           <footer className="text-center text-gray-500 dark:text-gray-400 mt-10">
-            <p>&copy; {new Date().getFullYear()} Dilukshan Sathiyamoorthy. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Dilukshan Sathiyamoorthy. All
+              rights reserved.
+            </p>
           </footer>
         </div>
       </Router>
