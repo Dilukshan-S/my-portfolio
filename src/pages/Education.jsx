@@ -21,12 +21,12 @@ export default function Education() {
         <h3 className="text-xl font-semibold">
           BEng (Hons) Software Engineering with Industrial Placement
         </h3>
-        <p className="italic text-gray-300">
-          Informatics Institute of Technology, affiliated with the University of
-          Westminster (2021–2025)
-        </p>
-        <p className="text-green-400 font-medium">
-          Graduated with Second Class Upper Division
+        <p className="text-lg leading-relaxed">
+          I’m a Software Engineering graduate from IIT (affiliated with the University
+          of Westminster), now holding a Second Class Upper Division (2:1).
+          I enjoy building full-stack applications with clean architecture, modern UI,
+          and high-performance logic. I focus on React, Node.js, and cloud-based
+          app development, and I love solving real-world problems with elegant code.
         </p>
 
         <br />

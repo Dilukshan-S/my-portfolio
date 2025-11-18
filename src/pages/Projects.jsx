@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const projects = [
-  { title: 'Summarizer', desc: 'Video summarization tool using Flask, Whisper, BART, and TTS.' },
+  { title: 'Summarizer', desc: 'Built a Video summarization tool using Flask, Whisper, BART, and TTS to extract key audio-visual features, Implemented a React UI with preview timelines, Achieved an average 30–40% reduction in processing time.' },
   { title: 'MindMate', desc: 'Mental health support app with real-time emotion detection using TensorFlow and OpenCV.' },
   { title: 'HomeTeq', desc: 'E-commerce website featuring secure login, payment integration, and order tracking.' },
 ];

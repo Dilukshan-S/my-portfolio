@@ -57,9 +57,19 @@ export default function Home() {
         </p>
       </div>
 
+      <div className="mt-4">
+  <a
+    href="#projects"
+    className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+  >
+    View My Projects
+  </a>
+</div>
+
+
       <Canvas
         className="absolute top-0 left-0 z-0"
-        camera={{ position: [0, 0, 6] }}
+        camera={{ position: window.innerWidth < 768 ? [0, 0, 8] : [0, 0, 6] }}
       >
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
