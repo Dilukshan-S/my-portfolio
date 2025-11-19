@@ -10,6 +10,7 @@ const projects = [
 export default function Projects() {
   return (
     <motion.section
+      section id="projects-section" 
       className="py-16 px-4 md:px-8 lg:px-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

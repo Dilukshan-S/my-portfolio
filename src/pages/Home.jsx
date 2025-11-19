@@ -1,8 +1,17 @@
 import { Canvas } from "@react-three/fiber";
 import { Float, Stars, OrbitControls } from "@react-three/drei";
 import "../App.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  // For smooth scroll to Projects section
+  const scrollToProjects = () => {
+    const element = document.getElementById("projects-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="hero-overlay absolute z-10 text-white text-center space-y-3 p-8 max-w-4xl break-words">
@@ -39,37 +48,30 @@ export default function Home() {
         </p>
 
         <p>
-          💼 Software Engineering Graduate (BEng Hons, Second Class Upper
-          Division) with hands-on experience building scalable and performant
-          web and mobile applications using React.js, React Native, Node.js,
-          Firebase, MongoDB, and Express.
+          💼 Software Engineering Graduate (BEng Hons, Second Class Upper Division)
+          with experience building scalable web & mobile apps using React, Node.js, Firebase, and more.
         </p>
 
         <p>
-          🔧 Skilled in JavaScript, TypeScript, HTML, CSS, Tailwind CSS, REST
-          APIs, JWT Auth, Docker, Git & GitHub, Firebase, and MongoDB.
+          🔧 Skilled in JavaScript, TypeScript, Tailwind CSS, REST APIs, Docker, Git & GitHub, and cloud development.
         </p>
 
         <p>
-          🚀 Passionate about creating modern user experiences, performance
-          optimization, and delivering impactful digital products through clean
-          and maintainable code.
+          🚀 Passionate about building creative, high-performance applications and solving real-world problems with code.
         </p>
+
+        {/* Subtle scroll-down indicator */}
+        <div 
+          className="mt-8 cursor-pointer animate-bounce text-2xl text-white" 
+          onClick={scrollToProjects}
+        >
+          ↓
+        </div>
       </div>
-
-      <div className="mt-4">
-  <a
-    href="#projects"
-    className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-  >
-    View My Projects
-  </a>
-</div>
-
 
       <Canvas
         className="absolute top-0 left-0 z-0"
-        camera={{ position: window.innerWidth < 768 ? [0, 0, 8] : [0, 0, 6] }}
+        camera={{ position: [0, 0, 6] }}
       >
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
