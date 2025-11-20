@@ -1,16 +1,17 @@
 import { Canvas } from "@react-three/fiber";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Float, Stars, OrbitControls } from "@react-three/drei";
 import "../App.css";
 import { useEffect } from "react";
 
 export default function Home() {
   // For smooth scroll to Projects section
-  const scrollToProjects = () => {
-    const element = document.getElementById("projects-section");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToProjects = () => {
+  //   const element = document.getElementById("projects-section");
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <div className="hero relative h-screen w-full flex items-center justify-center overflow-hidden">
@@ -19,6 +20,13 @@ export default function Home() {
           Dilukshan Sathiyamoorthy
         </h1>
 
+        {/* <div 
+          className="mt-8 cursor-pointer animate-bounce text-2xl text-white" 
+          onClick={scrollToProjects}
+        >
+          ↓
+        </div> */}
+
         <p>
           📧{" "}
           <a href="mailto:sathiyamurthi.20210851@iit.ac.lk">
@@ -26,26 +34,32 @@ export default function Home() {
           </a>
         </p>
 
-        <p>
-          🌐{" "}
-          <a
-            className="text-blue-400 underline"
-            href="https://linkedin.com/in/sdilukshan1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>{" "}
-          |{" "}
-          <a
-            className="text-blue-400 underline"
-            href="https://github.com/Dilukshan-S"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </p>
+        <p className="flex items-center gap-4 mt-2 justify-center">
+  <a
+    className="flex items-center gap-2 text-blue-400 underline"
+    href="https://linkedin.com/in/sdilukshan1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin size={18} />
+    LinkedIn
+  </a>
+
+  |
+
+  <a
+    className="flex items-center gap-2 text-white-1000 underline"
+    href="https://github.com/Dilukshan-S"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaGithub size={18} />
+    <div className="text-blue-400">
+      GitHub
+    </div>
+  </a>
+</p>
+
 
         <p>
           💼 Software Engineering Graduate (BEng Hons, Second Class Upper Division)
@@ -60,13 +74,6 @@ export default function Home() {
           🚀 Passionate about building creative, high-performance applications and solving real-world problems with code.
         </p>
 
-        {/* Subtle scroll-down indicator */}
-        <div 
-          className="mt-8 cursor-pointer animate-bounce text-2xl text-white" 
-          onClick={scrollToProjects}
-        >
-          ↓
-        </div>
       </div>
 
       <Canvas
