@@ -35,7 +35,7 @@ flex items-center justify-center overflow-hidden">
           </a>
         </p>
 
-        <p className="flex items-center gap-4 mt-2 justify-center">
+        <div className="flex items-center gap-4 mt-2 justify-center">
   <a
     className="flex items-center gap-2 text-blue-400 underline"
     href="https://linkedin.com/in/sdilukshan1"
@@ -59,7 +59,7 @@ flex items-center justify-center overflow-hidden">
       GitHub
     </div>
   </a>
-</p>
+</div>
 
 
         <p>

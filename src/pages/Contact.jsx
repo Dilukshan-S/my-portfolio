@@ -33,7 +33,7 @@ export default function Contact() {
     })
     .catch((error) => {
       setLoading(false);
-      console.error('EmailJS error:', error);
+      console.error('EmailJS error:', error.text || error);
       setStatus('Failed to send message. Please try again later.');
     });
   };
