@@ -41,11 +41,11 @@ export default function App() {
       <Router>
         <AnimatedBackground />
         <Navbar />
-        <div className="pt-20 px-4 pb-10 max-w-5xl mx-auto">
+        <div className="pt-20 px-4 pb-10 max-w-5xl min-h-screen flex flex-col mx-auto">
           <div className="flex-grow">
             <AnimatedRoutes />
           </div>
-          <footer className="text-center text-gray-500 dark:text-gray-400 mt-10">
+          <footer className="text-center text-gray-500 dark:text-gray-400 mt-10 mb-0">
             <p>
               &copy; {new Date().getFullYear()} Dilukshan Sathiyamoorthy. All
               rights reserved.

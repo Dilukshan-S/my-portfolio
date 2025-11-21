@@ -14,7 +14,8 @@ export default function Home() {
   // };
 
   return (
-    <div className="hero relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="hero relative min-h-[calc(100vh-64px)] w-full 
+flex items-center justify-center overflow-hidden">
       <div className="hero-overlay absolute z-10 text-white text-center space-y-3 p-8 max-w-4xl break-words">
         <h1 className="text-4xl md:text-5xl font-bold">
           Dilukshan Sathiyamoorthy
