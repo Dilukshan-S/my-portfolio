@@ -1,10 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const skills = [
-  'HTML', 'CSS', 'Java', 'Python', 'JavaScript', 'React', 'React Native',
-  'Node.js', 'Tailwind CSS', 'Firebase', 'MongoDB', 'SQL', 'Git', 'Docker',
-  'TypeScript', 'Nest.js'
+const skillCategories = [
+  {
+    title: "Frontend",
+    items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'React Native', 'Tailwind CSS']
+  },
+  {
+    title: "Backend",
+    items: ['Node.js', 'Nest.js', 'Firebase', 'MongoDB', 'SQL']
+  },
+  {
+    title: "Programming Languages",
+    items: ['Java', 'Python']
+  },
+  {
+    title: "DevOps / Tools",
+    items: ['Git', 'Docker']
+  },
+  {
+    title: "Cybersecurity",
+    items: [
+      'Network Vulnerability Assessment',
+      'ARP Spoofing / MiTM',
+      'Web Security (SQLi, XSS, CSRF)',
+      'Cryptography & Hash Cracking',
+      'Social Engineering Simulation',
+      'Denial-of-Service Testing'
+    ]
+  }
 ];
 
 export default function Skills() {
@@ -16,16 +40,26 @@ export default function Skills() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl font-bold mb-6 text-center">Skills</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {skills.map((skill, i) => (
+      <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        {skillCategories.map((category, i) => (
           <motion.div
             key={i}
-            className="bg-gray-100 text-black dark:bg-gray-800 dark:text-white p-4 rounded-lg shadow-md transition-colors text-center hover:shadow-lg hover:scale-105 duration-200"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 250 }}
+            className="p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-md"
           >
-            {skill}
+            <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
+              {category.title}
+            </h3>
+            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+              {category.items.map((item, idx) => (
+                <li key={idx} className="border-b border-gray-300/40 dark:border-gray-700/40 pb-1">
+                  {item}
+                </li>
+              ))}
+            </ul>
           </motion.div>
         ))}
       </div>

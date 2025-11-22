@@ -28,6 +28,17 @@ const projects = [
     github: 'https://github.com/Dilukshan-S/weather_app',
     demo: null, 
   },
+  {
+  title: 'Security Assessment Lab – Cybersecurity Module',
+  desc: 'Hands-on real-world penetration testing and vulnerability analysis: reconnaissance, network exploitation, web application attacks (SQLi, XSS, CSRF), cryptographic attacks, MiTM, DoS simulations, and defensive strategies.',
+  tags: [
+    'Nmap', 'Dirbuster', 'Wireshark', 'Hydra', 'Burp Suite',
+    'SQLi', 'XSS', 'CSRF', 'ARP Spoofing', 'MiTM', 'DoS'
+  ],
+  github: null,
+  demo: null,
+  research: null
+},
 ];
 
 // Animation Variants
