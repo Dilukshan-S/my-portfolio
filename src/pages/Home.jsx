@@ -5,17 +5,9 @@ import "../App.css";
 import { useEffect } from "react";
 
 export default function Home() {
-  // For smooth scroll to Projects section
-  // const scrollToProjects = () => {
-  //   const element = document.getElementById("projects-section");
-  //   if (element) {
-  //     element.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
+  
   return (
-    <div className="hero relative min-h-[calc(100vh-64px)] w-full 
-flex items-center justify-center overflow-hidden">
+    <div className="hero relative min-h-[calc(100vh-64px)] w-full flex items-center justify-center overflow-hidden">
       <div className="hero-overlay absolute z-10 text-white text-center space-y-3 p-8 max-w-4xl break-words">
         <h1 className="text-4xl md:text-5xl font-bold">
           Dilukshan Sathiyamoorthy
@@ -36,30 +28,30 @@ flex items-center justify-center overflow-hidden">
         </p>
 
         <div className="flex items-center gap-4 mt-2 justify-center">
-  <a
-    className="flex items-center gap-2 text-blue-400 underline"
-    href="https://linkedin.com/in/sdilukshan1"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FaLinkedin size={18} />
-    LinkedIn
-  </a>
+      <a
+        className="flex items-center gap-2 text-blue-400 underline"
+        href="https://linkedin.com/in/sdilukshan1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin size={18} />
+        LinkedIn
+      </a>
 
-  |
+      |
 
-  <a
-    className="flex items-center gap-2 text-white-1000 underline"
-    href="https://github.com/Dilukshan-S"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FaGithub size={18} />
-    <div className="text-blue-400">
-      GitHub
+      <a
+        className="flex items-center gap-2 text-white-1000 underline"
+        href="https://github.com/Dilukshan-S"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithub size={18} />
+        <div className="text-blue-400">
+          GitHub
+        </div>
+      </a>
     </div>
-  </a>
-</div>
 
 
         <p>
