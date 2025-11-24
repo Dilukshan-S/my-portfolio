@@ -10,10 +10,10 @@ export default function About() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl text-black-700 dark:text-gray-300 font-bold mb-6">About Me</h2>
+      <h2 className="text-3xl text-black dark:text-gray-300 font-bold mb-6">About Me</h2>
 
       <motion.p
-        className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
+        className="text-lg leading-relaxed text-black dark:text-gray-300"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -27,10 +27,10 @@ export default function About() {
       </motion.p>
 
       <motion.p
-        className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mt-6"
+        className="text-lg leading-relaxed text-black dark:text-gray-300 mt-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.1 }}
+        transition={{ duration: 0.4, delay: 0.4 }}
       >
         I enjoy working with JavaScript, TypeScript, React.js, Node.js, MongoDB,
         Firebase, and modern UI frameworks like Tailwind CSS. My focus is on
@@ -39,10 +39,10 @@ export default function About() {
       </motion.p>
 
       <motion.p
-        className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mt-6"
+        className="text-lg leading-relaxed text-black dark:text-gray-300 mt-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.2 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
       >
         Alongside software engineering, I also have hands-on experience in
         <span className="font-semibold text-blue-600 dark:text-blue-400">
@@ -56,10 +56,10 @@ export default function About() {
       </motion.p>
 
       <motion.p
-        className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mt-6"
+        className="text-lg leading-relaxed text-black dark:text-gray-300 mt-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.3 }}
+        transition={{ duration: 0.4, delay: 0.7 }}
       >
         I’m driven by curiosity, creativity, and a desire to continuously learn.
         Whether it's front-end engineering, backend development, system design,
