@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.section
-      className="py-16 px-4 md:px-8 lg:px-16"
+      className="py-16 px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
+      <h2 className="text-3xl text-black-700 dark:text-gray-300 font-bold mb-6">About Me</h2>
 
       <motion.p
         className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
