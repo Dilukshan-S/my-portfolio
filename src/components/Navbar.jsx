@@ -38,8 +38,8 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-gray-300 dark:bg-gray-700 text-black dark:text-white'
-                    : 'text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800'
+                    ? 'bg-gray-400 dark:bg-gray-700 text-black dark:text-white'
+                    : 'text-black dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800'
                 }`
               }
             >
