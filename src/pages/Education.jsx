@@ -31,9 +31,15 @@ export default function Education() {
 
         <br />
 
-        <h3 className="text-xl font-semibold">Cambridge Advanced Level</h3>
+        <h3 className="text-xl font-semibold">Cambridge Advanced Level (Mathematics Stream)</h3>
         <p>Oasis International School</p>
         <p>Achieved 3 A’s and 1 B</p>
+
+        <br />
+
+        <h3 className="text-xl font-semibold">Cambridge Ordinary Level (Science Stream)</h3>
+        <p>Oasis International School</p>
+        <p>Achieved 1 A* 4 A’s 1 B and 1 C</p>
       </motion.div>
     </motion.section>
   );
