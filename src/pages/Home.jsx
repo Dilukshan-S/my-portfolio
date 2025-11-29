@@ -76,6 +76,7 @@ export default function Home() {
             <span className="hidden sm:inline text-blue-400">GitHub</span>
           </a>
         </motion.div>
+        <br></br>
 
         {/* Short bullets / summary */}
         <div className="mt-3 space-y-2">
@@ -85,8 +86,10 @@ export default function Home() {
             transition={{ delay: 0.8, duration: 0.7 }}
             className="text-sm md:text-base text-gray-700 dark:text-gray-200"
           >
-            🔧 Skilled in JavaScript, TypeScript, React, Node.js, Tailwind CSS, Firebase, MongoDB, Docker and modern cloud tooling.
+            🔧 Skilled in JavaScript, TypeScript, React, Node.js, AI/ML, Tailwind CSS, Firebase, MongoDB, Docker, and modern cloud tooling.
           </motion.p>
+
+        <br></br>
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -94,11 +97,12 @@ export default function Home() {
             transition={{ delay: 1.0, duration: 0.7 }}
             className="text-sm md:text-base text-gray-700 dark:text-gray-200"
           >
-            🚀 Passionate about building performant, secure and maintainable applications — I also have hands-on cybersecurity experience (vulnerability assessment, web & network testing).
+            🚀 Passionate about building performant, secure and maintainable applications — I have hands-on cybersecurity experience (vulnerability assessment, web & network testing) and a strong interest in AI/ML research and applied solutions.
           </motion.p>
         </div>
 
-        {/* Action row: Download CV + optional "Hire me" link */}
+        <br></br>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -110,10 +114,11 @@ export default function Home() {
             href={cvUrl}
             download="Dilukshan_CV.pdf"
             className="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md shadow-md text-sm md:text-base transition"
-            aria-label="Download CV"
+            aria-label="Download CV (PDF)"
+            title="Download CV (PDF)"
           >
-            <FaDownload />
-            Download CV
+            <FaDownload aria-hidden="true" />
+            <span>Download CV (PDF)</span>
           </a>
 
     
