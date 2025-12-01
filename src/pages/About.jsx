@@ -33,8 +33,9 @@ export default function About() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         I enjoy working with JavaScript, TypeScript, React.js, Node.js, MongoDB,
-        Firebase, and modern UI frameworks like Tailwind CSS. My focus is on
-        delivering intuitive interfaces, building scalable backend services,
+        Firebase, and modern UI frameworks like Tailwind CSS. I'm also passionate about
+        <span className="font-semibold text-purple-600 dark:text-purple-400"> AI/ML applications</span> and building intelligent systems.
+        My focus is on delivering intuitive interfaces, building scalable backend services,
         and engineering solutions that solve real problems.
       </motion.p>
 
@@ -61,11 +62,23 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.7 }}
       >
-        I’m driven by curiosity, creativity, and a desire to continuously learn.
+        I'm driven by curiosity, creativity, and a desire to continuously learn.
         Whether it's front-end engineering, backend development, system design,
-        or advanced security concepts, I enjoy building solutions that leave a
+        cybersecurity hardening, or AI/ML innovation, I enjoy building solutions that leave a
         meaningful impact.
       </motion.p>
+
+      <motion.div
+        className="mt-8 p-6 bg-indigo-100 dark:bg-indigo-900/30 rounded-lg border border-indigo-300 dark:border-indigo-700"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.9 }}
+      >
+        <h3 className="text-xl font-bold text-indigo-900 dark:text-indigo-300 mb-2">Let's collaborate</h3>
+        <p className="text-indigo-800 dark:text-indigo-200">
+          Open to exploring opportunities in full-stack development, AI/ML, cybersecurity research, or innovative projects that push boundaries.
+        </p>
+      </motion.div>
     </motion.section>
   );
 }

@@ -5,7 +5,8 @@ import {
   Server,
   FileText,
   Settings,
-  ShieldCheck
+  ShieldCheck,
+  Brain
 } from "lucide-react";
 
 /**
@@ -41,6 +42,11 @@ const skillCategories = [
     title: "Programming Languages",
     icon: FileText,
     items: ["Java", "Python"],
+  },
+  {
+    title: "AI/ML",
+    icon: Brain,
+    items: ["PyTorch", "TensorFlow", "Scikit-learn", "NLP (BART, SBERT)", "Computer Vision (OpenCV)", "Audio Processing (Librosa)"],
   },
   {
     title: "DevOps / Tools",

@@ -49,48 +49,57 @@ export default function Contact() {
         <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block mb-2">Name</label>
+            <label htmlFor="name" className="block mb-2 font-semibold">Name</label>
             <input
+              id="name"
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-lg bg-white text-black"
+              placeholder="Your name"
+              aria-label="Full name"
+              className="w-full p-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             />
           </div>
           <div>
-            <label className="block mb-2">Email</label>
+            <label htmlFor="email" className="block mb-2 font-semibold">Email</label>
             <input
+              id="email"
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-lg bg-white text-black"
+              placeholder="your.email@example.com"
+              aria-label="Email address"
+              className="w-full p-3 rounded-lg bg-white text-black focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             />
           </div>
           <div>
-            <label className="block mb-2">Message</label>
+            <label htmlFor="message" className="block mb-2 font-semibold">Message</label>
             <textarea
+              id="message"
               name="message"
               value={form.message}
               onChange={handleChange}
               required
-              className="w-full p-3 rounded-lg bg-white text-black h-32"
+              placeholder="Tell me about your project or inquiry..."
+              aria-label="Message content"
+              className="w-full p-3 rounded-lg bg-white text-black h-32 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-violet-600 hover:bg-violet-700 text-white py-3 px-6 rounded-lg font-semibold transition"
+            className="w-full bg-violet-600 hover:bg-violet-700 text-white py-3 px-6 rounded-lg font-semibold transition disabled:opacity-60"
             disabled={loading}
           >
             {loading ? 'Sending...' : 'Send Message'}
           </button>
           {status && (
-            <p className={`text-center mt-4 ${status.includes('successfully') ? 'text-green-400' : 'text-red-400'}`}>
+            <div role="alert" className={`text-center mt-4 p-3 rounded-lg ${status.includes('successfully') ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' : 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400'}`}>
               {status}
-            </p>
+            </div>
           )}
         </form>
       </div>

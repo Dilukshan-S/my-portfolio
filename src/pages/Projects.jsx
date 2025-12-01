@@ -76,6 +76,14 @@ Featured Projects </h2>
 
           {/* Content */}
           <div className="p-6 flex flex-col flex-grow relative z-10">
+            {/* AI/ML Badge */}
+            {(p.title.includes('AI') || p.title.includes('MindMate')) && (
+              <div className="mb-2 inline-flex items-center gap-1 px-2 py-1 bg-purple-100 dark:bg-purple-900/40 rounded-md border border-purple-300 dark:border-purple-700 w-fit">
+                <Brain size={14} className="text-purple-600 dark:text-purple-400" />
+                <span className="text-xs font-semibold text-purple-700 dark:text-purple-300">AI/ML</span>
+              </div>
+            )}
+
             <h3 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-white">
               {p.title}
             </h3>
