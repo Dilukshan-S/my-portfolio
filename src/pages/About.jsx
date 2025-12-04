@@ -10,7 +10,9 @@ export default function About() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl text-black dark:text-gray-300 font-bold mb-6">About Me</h2>
+      <h2 className="text-3xl text-black dark:text-gray-300 font-bold mb-6">
+        About Me
+      </h2>
 
       <motion.p
         className="text-lg leading-relaxed text-black dark:text-gray-300"
@@ -20,10 +22,11 @@ export default function About() {
       >
         I'm a Software Engineering graduate from the Informatics Institute of
         Technology (affiliated with the University of Westminster), where I
-        completed my BEng (Hons) degree with a <strong>Second Class Upper
-        Division</strong>. I’m deeply passionate about full-stack development,
-        building modern web applications, and creating seamless digital
-        experiences with clean architecture and performance-first thinking.
+        completed my BEng (Hons) degree with a{" "}
+        <strong>Second Class Upper Division</strong>. I’m deeply passionate
+        about full-stack development, building modern web applications, and
+        creating seamless digital experiences with clean architecture and
+        performance-first thinking.
       </motion.p>
 
       <motion.p
@@ -33,10 +36,15 @@ export default function About() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         I enjoy working with JavaScript, TypeScript, React.js, Node.js, MongoDB,
-        Firebase, and modern UI frameworks like Tailwind CSS. I'm also passionate about
-        <span className="font-semibold text-purple-600 dark:text-purple-400"> AI/ML applications</span> and building intelligent systems.
-        My focus is on delivering intuitive interfaces, building scalable backend services,
-        and engineering solutions that solve real problems.
+        Firebase, and modern UI frameworks like Tailwind CSS. I'm also
+        passionate about
+        <span className="font-semibold text-purple-600 dark:text-purple-400">
+          {" "}
+          AI/ML applications
+        </span>{" "}
+        and building intelligent systems. My focus is on delivering intuitive
+        interfaces, building scalable backend services, and engineering
+        solutions that solve real problems.
       </motion.p>
 
       <motion.p
@@ -47,9 +55,10 @@ export default function About() {
       >
         Alongside software engineering, I also have hands-on experience in
         <span className="font-semibold text-blue-600 dark:text-blue-400">
-          {" "}cybersecurity
-        </span>
-        —including vulnerability assessment, network exploitation, web
+          {" "}
+          cybersecurity
+        </span>{" "}
+        including vulnerability assessment, network exploitation, web
         application security testing, cryptographic attacks, social engineering
         simulation, and defensive security practices. This background helps me
         design applications that are not only efficient but also hardened
@@ -60,12 +69,26 @@ export default function About() {
         className="text-lg leading-relaxed text-black dark:text-gray-300 mt-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.6 }}
+      >
+        I also have one year of hands-on industry experience as a Full Stack
+        Developer Intern at <strong>Cloud99X</strong>, where I built production
+        features using React.js, React Native, Node.js, Nest.js, and Firebase. I
+        contributed to real-world projects, optimized backend performance, and
+        collaborated with engineering teams to deliver reliable, scalable
+        solutions.
+      </motion.p>
+
+      <motion.p
+        className="text-lg leading-relaxed text-black dark:text-gray-300 mt-6"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.7 }}
       >
         I'm driven by curiosity, creativity, and a desire to continuously learn.
         Whether it's front-end engineering, backend development, system design,
-        cybersecurity hardening, or AI/ML innovation, I enjoy building solutions that leave a
-        meaningful impact.
+        cybersecurity hardening, or AI/ML innovation, I enjoy building solutions
+        that leave a meaningful impact.
       </motion.p>
 
       <motion.div
@@ -74,9 +97,12 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.9 }}
       >
-        <h3 className="text-xl font-bold text-indigo-900 dark:text-indigo-300 mb-2">Let's collaborate</h3>
+        <h3 className="text-xl font-bold text-indigo-900 dark:text-indigo-300 mb-2">
+          Let's collaborate
+        </h3>
         <p className="text-indigo-800 dark:text-indigo-200">
-          Open to exploring opportunities in full-stack development, AI/ML, cybersecurity research, or innovative projects that push boundaries.
+          Open to exploring opportunities in full-stack development, AI/ML,
+          cybersecurity, or innovative projects that push boundaries.
         </p>
       </motion.div>
     </motion.section>
