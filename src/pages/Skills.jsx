@@ -6,7 +6,7 @@ import {
   FileText,
   Settings,
   ShieldCheck,
-  Brain
+  Brain,
 } from "lucide-react";
 
 /**
@@ -28,7 +28,7 @@ const skillCategories = [
       "CSS",
       "JavaScript",
       "TypeScript",
-      "React",
+      "React.js",
       "React Native",
       "Tailwind CSS",
     ],
@@ -36,22 +36,42 @@ const skillCategories = [
   {
     title: "Backend",
     icon: Server,
-    items: ["Node.js", "Nest.js", "Firebase", "MongoDB", "SQL"],
+    items: ["Node.js", "Nest.js", "Express.js", "Flask (Python)", "PHP"],
+  },
+  {
+    title: "Databases",
+    icon: FileText,
+    items: ["Firestore", "MongoDB", "MySQL"],
+  },
+  {
+    title: "Cloud / BaaS / APIs",
+    icon: FileText,
+    items: ["Firebase", "Google Maps API", "REST API", "CI/CD"],
   },
   {
     title: "Programming Languages",
     icon: FileText,
-    items: ["Java", "Python"],
+    items: ["Java", "Python", "TypeScript", "PHP"],
   },
   {
     title: "AI/ML",
     icon: Brain,
-    items: ["PyTorch", "TensorFlow", "Scikit-learn", "NLP (BART, SBERT)", "Computer Vision (OpenCV)", "Audio Processing (Librosa)"],
+    items: [
+      "Keras",
+      "Numpy",
+      "OpenCV",
+      "Pandas",
+      "Librosa",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "NLP (BART, SBERT)",
+    ],
   },
   {
     title: "DevOps / Tools",
     icon: Settings,
-    items: ["Git", "Docker"],
+    items: ["Git", "Docker", "Vite", "CI/CD"],
   },
   {
     title: "Cybersecurity",
@@ -116,7 +136,9 @@ export default function Skills() {
 
           {/* Theme toggle */}
           <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-500 dark:text-gray-400">Glow</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              Glow
+            </span>
             <div className="inline-flex bg-white/5 p-1 rounded-full shadow-sm">
               <button
                 onClick={() => setGlowTheme("blue")}
@@ -194,13 +216,17 @@ export default function Skills() {
                       <Icon
                         size={20}
                         strokeWidth={1.8}
-                        className={`${glowTheme === "blue" ? "text-white" : "text-white"}`}
+                        className={`${
+                          glowTheme === "blue" ? "text-white" : "text-white"
+                        }`}
                       />
                     </div>
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-1">{category.title}</h3>
+                    <h3 className="text-lg font-semibold mb-1">
+                      {category.title}
+                    </h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {category.items.length} skills
                     </p>

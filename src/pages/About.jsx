@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -77,6 +77,13 @@ export default function About() {
         contributed to real-world projects, optimized backend performance, and
         collaborated with engineering teams to deliver reliable, scalable
         solutions.
+        <br></br>
+        <Link
+          to="/experience"
+          className="text-blue-600 dark:text-blue-400 font-semibold"
+        >
+          View Experience &rarr;
+        </Link>
       </motion.p>
 
       <motion.p
