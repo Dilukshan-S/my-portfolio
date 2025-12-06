@@ -9,16 +9,6 @@ import {
   Brain,
 } from "lucide-react";
 
-/**
- * Skills Page with:
- * - Icon gradient glow (Blue / Purple)
- * - Glassmorphism cards
- * - Badge-style skill tags (flex wrap)
- * - Staggered animations using framer-motion
- *
- * Tailwind required. Adjust colors to match your theme if needed.
- */
-
 const skillCategories = [
   {
     title: "Frontend",

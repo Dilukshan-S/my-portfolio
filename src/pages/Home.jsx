@@ -23,7 +23,6 @@ export default function Home() {
                    bg-white/90 dark:bg-black/60 backdrop-blur-md
                    text-gray-900 dark:text-white space-y-4"
       >
-        {/* Name */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,7 +32,6 @@ export default function Home() {
           Dilukshan Sathiyamoorthy
         </motion.h1>
 
-        {/* Role / Short tagline */}
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,7 +42,6 @@ export default function Home() {
           Division) • Full-Stack Developer (React / Node.js)
         </motion.h2>
 
-        {/* Contact row: email + social links */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -85,7 +82,6 @@ export default function Home() {
         </motion.div>
         <br></br>
 
-        {/* Short bullets / summary */}
         <div className="mt-3 space-y-2">
           <motion.p
             initial={{ opacity: 0 }}

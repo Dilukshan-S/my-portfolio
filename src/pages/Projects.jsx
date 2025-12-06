@@ -37,7 +37,6 @@ tags: [
 },
 ];
 
-// Animation Variants
 const containerVariants = {
 hidden: { opacity: 0 },
 visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
@@ -69,14 +68,13 @@ Featured Projects </h2>
           {/* Gradient Glow */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-10 rounded-xl pointer-events-none"></div>
 
-          {/* Thumbnail / Placeholder */}
+          {/* Thumbnail */}
           <div className="h-40 w-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center">
             <Brain size={40} className="text-white/70" />
           </div>
 
           {/* Content */}
           <div className="p-6 flex flex-col flex-grow relative z-10">
-            {/* AI/ML Badge */}
             {(p.title.includes('AI') || p.title.includes('MindMate')) && (
               <div className="mb-2 inline-flex items-center gap-1 px-2 py-1 bg-purple-100 dark:bg-purple-900/40 rounded-md border border-purple-300 dark:border-purple-700 w-fit">
                 <Brain size={14} className="text-purple-600 dark:text-purple-400" />
@@ -92,7 +90,6 @@ Featured Projects </h2>
               {p.desc}
             </p>
 
-            {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-4">
               {p.tags.map((tag, idx) => (
                 <span
@@ -104,7 +101,6 @@ Featured Projects </h2>
               ))}
             </div>
 
-            {/* Links */}
             <div className="flex flex-wrap gap-4 mt-auto pt-4 border-t border-gray-100 dark:border-gray-800">
               {p.github && (
                 <a
