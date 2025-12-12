@@ -11,7 +11,6 @@ View live at: https://dilukshan-s.github.io/my-portfolio/
 
 - ⚡ Built with **React + Vite** for fast performance  
 - 🎨 Styled using **Tailwind CSS**  
-- 🌙 Light/Dark theme toggle with dynamic color handling  
 - 🧭 Animated page transitions and navigation bar  
 - 💼 Sections for **Home**, **Education**, **Skills**, **Experience**, and **Contact**  
 - 📬 Contact form (EmailJS integrated)  
