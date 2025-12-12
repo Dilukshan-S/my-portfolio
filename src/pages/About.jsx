@@ -10,7 +10,7 @@ export default function About() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
     >
-      {/* Image here*/}
+      {/* Headshot Image Placeholder – add your image later */}
       {/*
       <motion.img
         src="/path-to-headshot.jpg"
@@ -25,6 +25,7 @@ export default function About() {
       <h2 className="text-3xl font-bold text-black dark:text-gray-200 text-center mb-4">
         About Me
       </h2>
+
       <motion.p
         className="text-lg text-center text-gray-800 dark:text-gray-300 mb-6"
         initial={{ opacity: 0, y: 5 }}
@@ -32,10 +33,11 @@ export default function About() {
         transition={{ duration: 0.4 }}
       >
         I’m a Software Engineer specializing in full-stack development —
-        building modern web applications using React, Node.js, and
+        building modern applications using React, Node.js and
         performance-focused architecture.
       </motion.p>
 
+      {/* Skill Tags */}
       <motion.div
         className="flex flex-wrap justify-center gap-3 mb-8"
         initial={{ opacity: 0 }}
@@ -61,19 +63,40 @@ export default function About() {
         ))}
       </motion.div>
 
+      {/* Education + Experience */}
+      <motion.p
+        className="text-lg leading-relaxed text-black dark:text-gray-300 mb-6"
+        initial={{ opacity: 0, y: 5 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.25 }}
+      >
+        I hold a BEng (Hons) in Software Engineering (Second Class Upper
+        Division). I also have one year of hands-on industry experience as a
+        Full Stack Developer Intern at <strong>Cloud99X</strong>, where I
+        delivered production features using React.js, React Native, Node.js,
+        Nest.js, and Firebase.
+      </motion.p>
+
       <motion.p
         className="text-lg leading-relaxed text-black dark:text-gray-300 mb-6"
         initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.3 }}
       >
-        I hold a BEng (Hons) in Software Engineering with a Second Class Upper
-        Division. I also have one year of hands-on industry experience as a Full
-        Stack Developer Intern at <strong>Cloud99X</strong>, where I developed
-        production features using React.js, React Native, Node.js, Nest.js, and
-        Firebase.
+        I’m passionate about{" "}
+        <span className="font-semibold text-purple-600 dark:text-purple-400">
+          AI/ML
+        </span>{" "}
+        and{" "}
+        <span className="font-semibold text-blue-600 dark:text-blue-400">
+          cybersecurity
+        </span>
+        — especially web app security testing, vulnerability assessment, and
+        intelligent systems. These areas help me build applications that are
+        high-performance, reliable, and secure.
       </motion.p>
 
+      {/* CTA Button */}
       <motion.div
         className="flex flex-wrap justify-center gap-4 mt-8"
         initial={{ opacity: 0 }}
