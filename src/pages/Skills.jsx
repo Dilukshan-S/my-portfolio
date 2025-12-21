@@ -7,6 +7,8 @@ import {
   Settings,
   ShieldCheck,
   Brain,
+  Cloud,
+  Terminal,
 } from "lucide-react";
 
 const skillCategories = [
@@ -34,9 +36,23 @@ const skillCategories = [
     items: ["Firestore", "MongoDB", "MySQL"],
   },
   {
-    title: "Cloud / BaaS / APIs",
+    title: "Cloud Computing (AWS)",
+    icon: Cloud,
+    items: [
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS IAM",
+      "AWS VPC (Basics)",
+      "Amazon RDS (Basics)",
+      "AWS CloudWatch",
+      "Shared Responsibility Model",
+      "Cloud Security Fundamentals",
+    ],
+  },
+  {
+    title: "Cloud Services, BaaS & APIs",
     icon: FileText,
-    items: ["Firebase", "Google Maps API", "REST API", "CI/CD"],
+    items: ["Firebase", "Google Maps API", "REST APIs", "CI/CD"],
   },
   {
     title: "Programming Languages",
@@ -44,11 +60,11 @@ const skillCategories = [
     items: ["Java", "Python", "TypeScript", "PHP"],
   },
   {
-    title: "AI/ML",
+    title: "AI / ML",
     icon: Brain,
     items: [
       "Keras",
-      "Numpy",
+      "NumPy",
       "OpenCV",
       "Pandas",
       "Librosa",
@@ -59,12 +75,26 @@ const skillCategories = [
     ],
   },
   {
-    title: "DevOps / Tools",
-    icon: Settings,
-    items: ["Git", "Docker", "Vite", "CI/CD"],
+    title: "Linux & Security Tools",
+    icon: Terminal,
+    items: [
+      "Linux (Ubuntu, Kali)",
+      "Linux Command Line (Bash)",
+      "User & Permission Management",
+      "Networking Basics (TCP/IP, DNS)",
+      "Firewall Basics (iptables, ufw)",
+      "Nmap",
+      "Wireshark",
+      "Metasploit",
+    ],
   },
   {
-    title: "Cybersecurity",
+    title: "DevOps / Tools",
+    icon: Settings,
+    items: ["Git", "Docker", "Vite", "CI/CD Pipelines"],
+  },
+  {
+    title: "Cybersecurity (Linux-based Labs)",
     icon: ShieldCheck,
     items: [
       "Network Vulnerability Assessment",
@@ -92,25 +122,7 @@ const cardVariants = {
 };
 
 export default function Skills() {
-  // theme: "blue" or "purple"
   const [glowTheme, setGlowTheme] = useState("blue");
-
-  const glowClasses = {
-    blue: {
-      bg: "from-blue-400 to-blue-600",
-      ring: "ring-blue-400/40",
-      text: "text-blue-500",
-      shadow: "shadow-blue-600/30",
-    },
-    purple: {
-      bg: "from-purple-500 to-pink-500",
-      ring: "ring-purple-400/40",
-      text: "text-purple-500",
-      shadow: "shadow-pink-600/30",
-    },
-  };
-
-  const currentGlow = glowClasses[glowTheme];
 
   return (
     <motion.section
@@ -124,7 +136,7 @@ export default function Skills() {
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-3xl font-bold">Skills</h2>
 
-          {/* Theme toggle */}
+          {/* Glow toggle (RESTORED) */}
           <div className="flex items-center gap-3">
             <span className="text-sm text-gray-500 dark:text-gray-400">
               Glow
@@ -132,24 +144,22 @@ export default function Skills() {
             <div className="inline-flex bg-white/5 p-1 rounded-full shadow-sm">
               <button
                 onClick={() => setGlowTheme("blue")}
-                className={`px-3 py-1 rounded-full text-sm font-medium transition-shadow ${
+                className={`px-3 py-1 rounded-full text-sm font-medium ${
                   glowTheme === "blue"
-                    ? `bg-gradient-to-r ${glowClasses.blue.bg} text-white shadow-md`
-                    : "bg-transparent text-gray-600/90 dark:text-gray-300/90"
+                    ? "bg-gradient-to-r from-blue-400 to-blue-600 text-white shadow-md"
+                    : "text-gray-600 dark:text-gray-300"
                 }`}
-                aria-pressed={glowTheme === "blue"}
               >
                 Blue
               </button>
 
               <button
                 onClick={() => setGlowTheme("purple")}
-                className={`px-3 py-1 rounded-full text-sm font-medium transition-shadow ${
+                className={`px-3 py-1 rounded-full text-sm font-medium ${
                   glowTheme === "purple"
-                    ? `bg-gradient-to-r ${glowClasses.purple.bg} text-white shadow-md`
-                    : "bg-transparent text-gray-600/90 dark:text-gray-300/90"
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md"
+                    : "text-gray-600 dark:text-gray-300"
                 }`}
-                aria-pressed={glowTheme === "purple"}
               >
                 Purple
               </button>
@@ -163,8 +173,19 @@ export default function Skills() {
           animate="show"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {skillCategories.map((category, i) => {
+          {skillCategories.map((category) => {
             const Icon = category.icon;
+
+            const gradient =
+              glowTheme === "blue"
+                ? "linear-gradient(135deg, #60a5fa 0%, #2563eb 100%)"
+                : "linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)";
+
+            const shadow =
+              glowTheme === "blue"
+                ? "0 8px 30px rgba(37,99,235,0.18)"
+                : "0 8px 30px rgba(236,72,153,0.18)";
+
             return (
               <motion.article
                 key={category.title}
@@ -173,83 +194,35 @@ export default function Skills() {
                 className="relative p-6 rounded-2xl
                   bg-white/6 dark:bg-gray-800/40 backdrop-blur-sm
                   border border-white/6 dark:border-gray-700/30
-                  shadow-sm hover:shadow-lg transition-shadow"
+                  shadow-sm hover:shadow-lg"
               >
-                {/* Icon with gradient glow */}
                 <div className="flex items-start gap-4">
                   <div
-                    className={`relative flex items-center justify-center w-14 h-14 rounded-full 
-                      before:absolute before:inset-0 before:rounded-full before:blur-2xl before:opacity-80
-                      after:absolute after:inset-0 after:rounded-full after:opacity-40`}
-                    style={{
-                      // the gradient background for the glow layer
-                      background: `linear-gradient(135deg, ${
-                        glowTheme === "blue"
-                          ? "#60a5fa 0%, #2563eb 100%"
-                          : "#7c3aed 0%, #ec4899 100%"
-                      })`,
-                      WebkitMaskImage: "-webkit-radial-gradient(white, black)",
-                    }}
-                    aria-hidden
+                    className="flex items-center justify-center w-12 h-12 rounded-full"
+                    style={{ background: gradient, boxShadow: shadow }}
                   >
-                    {/* Soft outer glow via boxShadow */}
-                    <div
-                      className="relative z-10 flex items-center justify-center w-12 h-12 rounded-full"
-                      style={{
-                        boxShadow:
-                          glowTheme === "blue"
-                            ? "0 8px 30px rgba(37,99,235,0.18), 0 4px 10px rgba(96,165,250,0.08)"
-                            : "0 8px 30px rgba(236,72,153,0.18), 0 4px 10px rgba(124,58,237,0.08)",
-                        background: "rgba(255,255,255,0.02)",
-                      }}
-                    >
-                      <Icon
-                        size={20}
-                        strokeWidth={1.8}
-                        className={`${
-                          glowTheme === "blue" ? "text-white" : "text-white"
-                        }`}
-                      />
-                    </div>
+                    <Icon size={20} className="text-white" />
                   </div>
 
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-1">
-                      {category.title}
-                    </h3>
+                  <div>
+                    <h3 className="text-lg font-semibold">{category.title}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {category.items.length} skills
                     </p>
                   </div>
                 </div>
 
-                {/* Tags / badges */}
-                <div className="mt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {category.items.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="inline-flex items-center text-sm px-3 py-1 rounded-md
-                          bg-white/10 dark:bg-white/5 border border-white/6 dark:border-white/6
-                          backdrop-blur-sm"
-                      >
-                        <span className="truncate max-w-xs">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* bottom gradient underline to add subtle polish */}
-                <div
-                  className="absolute left-6 right-6 bottom-3 h-[2px] rounded-full opacity-60"
-                  style={{
-                    background:
-                      glowTheme === "blue"
-                        ? "linear-gradient(90deg, rgba(96,165,250,0.25), rgba(37,99,235,0.6))"
-                        : "linear-gradient(90deg, rgba(124,58,237,0.25), rgba(236,72,153,0.6))",
-                  }}
-                  aria-hidden
-                />
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {category.items.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="text-sm px-3 py-1 rounded-md
+                        bg-white/10 dark:bg-white/5 border border-white/10"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </motion.article>
             );
           })}
