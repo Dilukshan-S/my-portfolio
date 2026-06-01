@@ -1,17 +1,28 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const experience = [
-  { 
-    role: 'Full Stack Developer Intern', 
-    company: 'Cloud99X Ltd', 
-    period: '07/2023 – 07/2024', 
+  {
+    role: "Internal application Developer Intern",
+    company: "Deloitte",
+    period: "02/2026 – Present",
     details: [
-      'Delivered production-ready features in React.js, React Native, and Node.js, reducing bug reports during testing.',
-      'Integrated Google Maps API for real-time location services.',
-      'Refactored backend modules, reducing API response latency by 15%.',
-      'Implemented and maintained services using Nest.js and Firebase for reliability at scale.',
-      'Collaborated on AI-driven automation pipelines and model integrations.',
+      "Developing internal business applications using Microsoft Power Platform (PowerApps,Power Automate, SharePoint).",
+      "Automating manual workflows, reducing operational effort and improving process efficiency across teams.",
+      "Designing low-code solutions integrated with enterprise data sources to streamline internal operations.",
+    ],
+  },
+
+  {
+    role: "Full Stack Developer Intern",
+    company: "Cloud99X Ltd",
+    period: "07/2023 – 07/2024",
+    details: [
+      "Delivered production-ready features in React.js, React Native, and Node.js, reducing bug reports during testing.",
+      "Integrated Google Maps API for real-time location services.",
+      "Refactored backend modules, reducing API response latency by 15%.",
+      "Implemented and maintained services using Nest.js and Firebase for reliability at scale.",
+      "Collaborated on AI-driven automation pipelines and model integrations.",
     ],
   },
 ];
@@ -34,8 +45,12 @@ export default function Experience() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: i * 0.2 }}
           >
-            <h3 className="text-xl font-semibold">{exp.role} @ {exp.company}</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">{exp.period}</p>
+            <h3 className="text-xl font-semibold">
+              {exp.role} @ {exp.company}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {exp.period}
+            </p>
             <ul className="list-disc ml-6 mt-2 space-y-1">
               {exp.details.map((item, idx) => (
                 <li key={idx}>{item}</li>

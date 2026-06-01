@@ -6,7 +6,7 @@ import "../App.css";
 
 export default function Home() {
   // Build CV URL that works both locally and when deployed (Vite base-aware)
-  const cvUrl = `${import.meta.env.BASE_URL || "/"}Dilukshan_CV.pdf`;
+  const cvUrl = `${import.meta.env.BASE_URL || "/"}Dilukshan_CV1.pdf`; //update this when new cv is added to public folder
 
   // Track CV download analytics
   const trackCVDownload = () => {
