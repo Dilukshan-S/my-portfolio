@@ -38,8 +38,8 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.7 }}
           className="text-lg md:text-xl font-medium text-gray-700 dark:text-gray-200"
         >
-          Software Engineering Graduate (BEng Hons — Second Class Upper
-          Division) • Full-Stack Developer (React / Node.js)
+          Software Engineering Graduate <br></br> Aspiring AI/ML Engineer &
+          Full-Stack Developer
         </motion.h2>
 
         <motion.div
@@ -89,8 +89,8 @@ export default function Home() {
             transition={{ delay: 0.8, duration: 0.7 }}
             className="text-sm md:text-base text-gray-700 dark:text-gray-200"
           >
-            🔧 Skilled in JavaScript, TypeScript, React, Node.js, AI/ML,
-            Tailwind CSS, Firebase, MongoDB, Docker, and modern cloud tooling.
+            🔧 Building intelligent software solutions using React, Node.js,
+            Python, TensorFlow and modern cloud technologies.
           </motion.p>
 
           <br></br>
@@ -101,10 +101,9 @@ export default function Home() {
             transition={{ delay: 1.0, duration: 0.7 }}
             className="text-sm md:text-base text-gray-700 dark:text-gray-200"
           >
-            🚀 Passionate about building performant, secure and maintainable
-            applications — I have hands-on cybersecurity experience
-            (vulnerability assessment, web & network testing) and a strong
-            interest in AI/ML research and applied solutions.
+            🚀 Interested in Artificial Intelligence, Machine Learning,
+            Cybersecurity and Full-Stack Development. I enjoy solving real-world
+            problems through intelligent, secure and scalable software systems.
           </motion.p>
         </div>
 

@@ -77,13 +77,13 @@ export default function Education() {
           icon="☁️"
           title="AWS re/Start Program"
           subtitle="CurveUp"
-          meta="Sep 2025 – Present"
+          meta="Sep 2025 – Dec 2025"
           description="Hands-on training in Cloud fundamentals, Linux, Networking, AWS services, Python, and real-world cloud scenarios."
         />
 
         <TimelineItem
           icon="🎓"
-          title="BEng (Hons) Software Engineering"
+          title="BEng (Hons) Software Engineering with Industrial placement"
           subtitle="Informatics Institute of Technology (IIT) – University of Westminster"
           meta="2021 – 2025"
           description="Passed with Second Class Honours (Upper division), Gained strong foundation in full-stack development, software design, databases, cloud fundamentals, and real-world project development."
