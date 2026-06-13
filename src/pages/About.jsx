@@ -32,8 +32,9 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        I’m a Software Engineer specializing in full-stack development —
-        building modern applications using React, Node.js and
+        I’m a Software Engineering graduate with experience in full-stack
+        development and a growing specialization in Artificial Intelligence and
+        Machine Learning. building modern applications using React, Node.js and
         performance-focused architecture.
       </motion.p>
 

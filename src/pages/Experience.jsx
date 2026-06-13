@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const experience = [
   {
-    role: "Internal application Developer Intern",
+    role: "Internal Application Developer Intern",
     company: "Deloitte",
     period: "02/2026 – Present",
     details: [
